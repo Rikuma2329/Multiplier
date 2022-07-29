@@ -1,0 +1,53 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2021/02/18 00:54:40
+// Design Name: 
+// Module Name: CSA25
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+(* keep_hierarchy = "yes" *) module CSA25(a, b, c_in, s, c_out);
+    input [24:0] a, b, c_in;
+    output [24:0] s, c_out;
+    
+    FA fa0(a[0], b[0], c_in[0], s[0], c_out[0]);
+    FA fa1(a[1], b[1], c_in[1], s[1], c_out[1]);
+    FA fa2(a[2], b[2], c_in[2], s[2], c_out[2]);
+    FA fa3(a[3], b[3], c_in[3], s[3], c_out[3]);
+    FA fa4(a[4], b[4], c_in[4], s[4], c_out[4]);
+    FA fa5(a[5], b[5], c_in[5], s[5], c_out[5]);
+    FA fa6(a[6], b[6], c_in[6], s[6], c_out[6]);
+    FA fa7(a[7], b[7], c_in[7], s[7], c_out[7]);
+    FA fa8(a[8], b[8], c_in[8], s[8], c_out[8]);
+    FA fa9(a[9], b[9], c_in[9], s[9], c_out[9]);
+    FA fa10(a[10], b[10], c_in[10], s[10], c_out[10]);
+    FA fa11(a[11], b[11], c_in[11], s[11], c_out[11]);
+    FA fa12(a[12], b[12], c_in[12], s[12], c_out[12]);
+    FA fa13(a[13], b[13], c_in[13], s[13], c_out[13]);
+    FA fa14(a[14], b[14], c_in[14], s[14], c_out[14]);
+    FA fa15(a[15], b[15], c_in[15], s[15], c_out[15]);
+    FA fa16(a[16], b[16], c_in[16], s[16], c_out[16]);
+    FA fa17(a[17], b[17], c_in[17], s[17], c_out[17]);
+    FA fa18(a[18], b[18], c_in[18], s[18], c_out[18]);
+    FA fa19(a[19], b[19], c_in[19], s[19], c_out[19]);
+    FA fa20(a[20], b[20], c_in[20], s[20], c_out[20]);
+    FA fa21(a[21], b[21], c_in[21], s[21], c_out[21]);
+    FA fa22(a[22], b[22], c_in[22], s[22], c_out[22]);
+    FA fa23(a[23], b[23], c_in[23], s[23], c_out[23]);
+    FA fa24(a[24], b[24], c_in[24], s[24], c_out[24]);
+    
+endmodule
